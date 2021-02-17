@@ -1,17 +1,1 @@
-body {
-    background: linen url("") no-repeat right top scroll;
-}
 
-h1 {
-  color: tomato;
-  text-align: center;
-  background-color:lightblue;
-  border: 5px solid skyblue;
-  border-radius: 10px;
-}
-
-img {
-  border:8px solid dodgerblue;
-  margin:8px;
-  height:90px;
-}
