@@ -1,3 +1,36 @@
+/* Style for the jumbotron */
+.jumbotron {
+  background-color: #343a40; /* Dark gray background */
+  color: #fff; /* White text */
+  padding: 60px; /* Add some padding */
+}
+
+/* Style for the navbar */
+.navbar {
+  background-color: #343a40; /* Dark gray background */
+}
+
+.navbar-brand {
+  color: #fff !important; /* White text */
+}
+
+/* Style for the container */
+.container {
+  margin-top: 30px; /* Add margin to the top */
+}
+
+/* Style for the about me section */
+.col-sm-4 {
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 20px; /* Add some padding */
+}
+
+/* Style for the Tic-Tac-Toe section */
+.col-sm-8 {
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 20px; /* Add some padding */
+}
+
 /* Add some padding and margin to the navbar items */
 .navbar-nav .nav-item {
   margin: 0 10px;
