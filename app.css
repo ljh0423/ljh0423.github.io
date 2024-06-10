@@ -65,7 +65,10 @@ button {
   border: none;
   cursor: pointer;
   border-radius: 5px;
-  margin-top: 20px; /* Adjust as needed */
+  margin-top: 20px;
+  top: 100px;
+  right: 100px;
+  z-index: 999;
 }
 
 button:hover {
