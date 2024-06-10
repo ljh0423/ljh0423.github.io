@@ -1,8 +1,16 @@
 // App.js
-import React from 'react';
+import React, { useState } from 'react';
+import { useSpring, animated } from 'react-spring';
 import './app.css';
 
 function App() {
+  const [toggle, setToggle] = useState(false);
+
+  // Define animation properties
+  const props = useSpring({
+    to: { opacity: toggle ? 1 : 0, transform: toggle ? 'translateX(0)' : 'translateX(100px)' },
+  });
+
   return (
     <div className="App">
       <header className="App-header">
@@ -28,6 +36,8 @@ function App() {
             <h2>Tic-Tac-Toe</h2>
             <p>Click on the link to play <a href="ttt.html">Tic-Tac-Toe</a></p>
             <p>See if you can figure out a strategy.</p>
+            <animated.div style={props}>Move me!</animated.div>
+            <button onClick={() => setToggle(!toggle)}>Toggle Animation</button>
           </div>
         </div>
       </div>
