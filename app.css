@@ -1,0 +1,58 @@
+/* App.css */
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 60px;
+  color: white;
+  animation: floating 3s ease infinite;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #282c34;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #17a2b8;
+}
+
+.container {
+  margin-top: 30px;
+}
+
+.col-sm-4, .col-sm-8 {
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+.footer {
+  background-color: #282c34;
+  color: white;
+  padding: 20px 0;
+}
