@@ -5,9 +5,9 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 
 // Set up scene, camera, and renderer
-const scene = new Scene();
-const camera = new PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-const renderer = new WebGLRenderer();
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
@@ -18,22 +18,22 @@ controls.dampingFactor = 0.25;
 controls.rotateSpeed = 0.35;
 
 // Create a sphere for the Earth
-const geometry = new SphereGeometry(1, 32, 32);
-const textureLoader = new TextureLoader();
+const geometry = new THREE.SphereGeometry(1, 32, 32);
+const textureLoader = new THREE.TextureLoader();
 const texture = textureLoader.load('https://threejs.org/examples/textures/planets/earth_atmos_2048.jpg');
-const material = new MeshBasicMaterial({ map: texture });
-const earth = new Mesh(geometry, material);
+const material = new THREE.MeshBasicMaterial({ map: texture });
+const earth = new THREE.Mesh(geometry, material);
 scene.add(earth);
 
 // Position the camera
 camera.position.z = 3;
 
 // Add ambient light
-const ambientLight = new AmbientLight(0xffffff, 0.5);
+const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
 scene.add(ambientLight);
 
 // Add directional light
-const directionalLight = new DirectionalLight(0xffffff, 0.5);
+const directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
 directionalLight.position.set(5, 3, 5);
 scene.add(directionalLight);
 
