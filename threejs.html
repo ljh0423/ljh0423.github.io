@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Three.js Earth Example</title>
+    <title>Three.js Earth Example with Controls</title>
     <style>
         body { margin: 0; }
         canvas { display: block; }
@@ -12,6 +12,7 @@
 <body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+    <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
     <script>
         // Set up scene, camera, and renderer
         const scene = new THREE.Scene();
@@ -40,10 +41,16 @@
         directionalLight.position.set(5, 3, 5);
         scene.add(directionalLight);
 
+        // Add mouse controls
+        const controls = new THREE.OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true;
+        controls.dampingFactor = 0.25;
+        controls.rotateSpeed = 0.35;
+
         // Render loop
         function animate() {
             requestAnimationFrame(animate);
-            earth.rotation.y += 0.005;
+            controls.update(); // Update controls
             renderer.render(scene, camera);
         }
 
