@@ -13,12 +13,13 @@
   <nav>
     <div class="container">
       <div class="logo">
-        <h1>My Portfolio</h1>
+        <h1>Juhyun Lee</h1>
       </div>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <button id="theme-toggle">🌙</button>
@@ -28,7 +29,7 @@
   <!-- Sections -->
   <header id="home">
     <div class="container">
-      <h1>Welcome to My Portfolio</h1>
+      <h1>This is me, Juhyun Lee</h1>
       <p>Showcasing my work and skills.</p>
     </div>
   </header>
@@ -36,7 +37,92 @@
   <section id="about">
     <div class="container">
       <h2>About Me</h2>
-      <p>This is a section about me. I am passionate about web development.</p>
+      <p>I am a passionate computer science student specializing in Data Science and Cognitive Science. I am experienced in various programming languages, machine learning tools, and cloud platforms. I strive to continuously learn and grow through real-world projects and research.</p>
+    </div>
+  </section>
+  
+  <section id="skills">
+    <div class="container">
+      <h3>Skills</h3>
+      <ul>
+        <li><strong>Languages:</strong> Python, C, C++, SQL, R, Go, Kotlin, JavaScript, React, HTML/CSS, PHP</li>
+        <li><strong>Tools:</strong> Numpy, Pandas, Pytorch, Tensorflow, Scikit-learn, XGBoost, langChain, Jupyter, matplotlib, Scipy, CUDA, Hadoop, Spark, Shell Scripting, MS Excel, SQL Server, PowerBI, OpenCV, REST API, Git, Perforce, Jira, Docker, UNIX, Linux, Azure, AWS, LaTeX</li>
+      </ul>
+    </div>
+  </section>
+  <section id="education">
+    <div class="container">
+      <h3>Education</h3>
+      <p><strong>University of Waterloo</strong> — Bachelor of Computer Science in Data Science, Minor in Cognitive Science (Expected May 2025)</p>
+      <p>Awards & Honors: Academic Excellence, Dean’s Honours</p>
+      <p>Interesting Coursework: CS480 - Introduction to Machine Learning, CS486 - Introduction to Artificial Intelligence</p>
+      <p>Active member of CTF, Data Science Club, and Waterloo AI, participates in CTF and programming challenges.</p>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="container">
+      <h2>Professional Experience</h2>
+      <div class="portfolio">
+        <div class="portfolio-item">
+          <h3>Data Science Intern</h3>
+          <h4>OpenText</h4>
+          <ul>
+            <li>Worked with the Human Resources team to develop and improve data processing automations related to business sector and vacation management.</li>
+            <li>Developed an attrition model using machine learning to evaluate employee fit based on characteristics and attributes.</li>
+            <li>Contributed to applying NLP models to identify strengths and weaknesses from text descriptions of employees.</li>
+          </ul>
+        </div>
+        <div class="portfolio-item">
+          <h3>R&D Associate</h3>
+          <h4>Estateably</h4>
+          <ul>
+            <li>Utilized AWS database for handling and processing data, fine-tuning NLP models for in-depth analysis of financial statements and will papers.</li>
+            <li>Played a key role in refining document parsers using spaCy to enhance data extraction accuracy and contributed to an AI project using RAG with langChain for recommending tasks in Trust products.</li>
+            <li>Produced detailed research reports on the effectiveness of LLM responses using APIs and participated in collaborative brainstorming sessions within the R&D team.</li>
+          </ul>
+        </div>
+        <div class="portfolio-item">
+          <h3>Game Programmer</h3>
+          <h4>Eden Industries</h4>
+          <ul>
+            <li>Worked with C++ to redesign game data structures, enabling efficient processing of game information and faster screen transitions.</li>
+            <li>Collaboratively improved the efficiency of the in-house game engine and suggested optimization changes for low-spec machines.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="research">
+    <div class="container">
+      <h2>Research Experience</h2>
+
+      <div class="portfolio">
+        <div class="portfolio-item">
+          <h3>Undergraduate Research Assistant</h3>
+          <h4>University of Waterloo</h4>
+          <p>Conducted research on SymbolicGPT, a transformer-based language model for solving symbolic regression problems using deep learning.</p>
+          <ul>
+            <li>Reviewed academic papers on symbolic regression to evaluate their applicability to the current research.</li>
+            <li>Improved model outputs by exploring original techniques and academic contributions.</li>
+            <li>Developed auxiliary conditions as hypotheses to specify properties of expressions to enhance accuracy.</li>
+            <li>Presented findings and suggested further research directions.</li>
+          </ul>
+        </div>
+
+        <div class="portfolio-item">
+          <h3>Software Engineering Research Assistant</h3>
+          <h4>Health and Rehab Research Inc.</h4>
+          <p>Worked on classifying imaginary movements from EEG signals using deep learning algorithms, specifically Bidirectional Long-Short Term Memory (Bi-LSTM) networks.</p>
+          <ul>
+            <li>Implemented state-of-the-art deep learning models (Bi-LSTM) for classifying EEG signals related to imaginary movements.</li>
+            <li>Identified and corrected a data leakage error in a publication, contributing to the correction of numerous similar issues in recent works.</li>
+            <li>Developed a pipeline to process data from trained models for real-time user interface controls using EEG signals.</li>
+            <li>Performed large-scale data processing and optimized filtering methods for model performance.</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -46,19 +132,19 @@
       <p>Here are some of the projects I’ve worked on:</p>
       <div class="portfolio">
         <div class="portfolio-item">
-          <img src="https://via.placeholder.com/300" alt="Project 1">
-          <h3>Project 1</h3>
-          <p>Description of Project 1.</p>
+          <!--<img src="https://via.placeholder.com/300" alt="Project 1">-->
+          <h3>Analyzer for Speech Patterns</h3>
+          <p>Used Natural Language Processing (NLP) and visualization to analyze text transcripts scraped through web scraping and data mining. Utilized pandas, scikit-learn, and NLP libraries like NLTK and TextBlob for data cleaning, sentiment analysis, and text generation.</p>
         </div>
         <div class="portfolio-item">
-          <img src="https://via.placeholder.com/300" alt="Project 2">
-          <h3>Project 2</h3>
-          <p>Description of Project 2.</p>
+          <!--<img src="https://via.placeholder.com/300" alt="Project 2">-->
+          <h3>Cough Analyzer</h3>
+          <p>Designed and implemented an audio classification model for cough sound detection to monitor respiratory health. Integrated personal health data with external sources, such as weather statistics, to identify patterns and predict health outcomes.</p>
         </div>
         <div class="portfolio-item">
-          <img src="https://via.placeholder.com/300" alt="Project 3">
-          <h3>Project 3</h3>
-          <p>Description of Project 3.</p>
+          <!--<img src="https://via.placeholder.com/300" alt="Project 3">-->
+          <h3>Character Recognition System</h3>
+          <p>Developed a system to analyze handwriting using models like CNN and support vector machines to predict written characters. Used data augmentation and visualization methods to improve generalization and showcased results from various models compared with OCR libraries like Tesseract.</p>
         </div>
       </div>
     </div>
@@ -67,7 +153,7 @@
   <section id="contact">
     <div class="container">
       <h2>Contact</h2>
-      <p>Get in touch with me through email or social media.</p>
+      <p>Get in touch with me through email or social media. Feel free to connect if you're interested in collaborating on projects, discussing new opportunities, or simply having a conversation about tech!</p>
     </div>
   </section>
 
