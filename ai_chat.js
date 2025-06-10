@@ -36,7 +36,7 @@ chatForm.addEventListener("submit", async (e) => {
   
   // Send to backend
   try {
-    const res = await fetch("https://45a3-34-31-241-5.ngrok-free.app/chat", {
+    const res = await fetch("https://ai-chat-cqt2.onrender.com/chat", {
       method: "POST",
       body: formData,
     });
