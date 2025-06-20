@@ -146,7 +146,7 @@ dragon.addEventListener("click", () => {
   if (!collection.includes(dragon.src)) {
     collection.push(dragon.src);
     localStorage.setItem("dragonCollection", JSON.stringify(collection));
-    alert("🔥 You captured a drifting dragon!");
-    dragon.remove();
   }
+  alert("🔥 You captured a drifting dragon!");
+  // dragon.remove();
 });
