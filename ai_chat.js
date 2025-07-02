@@ -36,7 +36,7 @@ chatForm.addEventListener("submit", async (e) => {
   
   // Send to backend
   try {
-    const res = await fetch("https://friendly-zabaione-cfba40.netlify.app/chat", {
+    const res = await fetch("https://70b6-35-234-35-156.ngrok-free.app/chat", {
       method: "POST",
       body: formData,
     });
